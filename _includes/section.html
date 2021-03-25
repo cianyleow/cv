@@ -1,8 +1,10 @@
-<section> <!-- BeginSection: {{ include.title }} -->
+<!-- BeginSection: {{ include.title }} -->
+<section>
 	{% include section-header.html title=include.title icon=include.icon %}
 
 	{% for post in site.categories[include.slug] %}
 		{% include entry.html post=post %}
 	{% endfor %}
-</section> <!-- EndSection: {{ include.title }} -->
+</section>
+<!-- EndSection: {{ include.title }} -->
 
