@@ -24,7 +24,7 @@ jobs:
 
           format_output: true
 
-          prettier_opts: '{ "useTabs": true, "proseWrap": "never" }'
+          prettier_opts: '{ "useTabs": true, "printWidth": 400 }'
 
       - name: 🚀 deploy
         uses: peaceiris/actions-gh-pages@v3
