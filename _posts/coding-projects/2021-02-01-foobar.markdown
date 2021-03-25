@@ -1,0 +1,11 @@
+---
+title: Google Foobar Problems
+toDate: 2021-03-01
+date:   2021-02-01
+establishment:
+   text: Google Foobar
+   link: https://foobar.withgoogle.com
+---
+Completed the *top secret*, invitation only, [Google FooBar](https://medium.com/plutonic-services/things-you-should-know-about-google-foobar-invitation-703a535bf30f#:~:text=Google%20Foobar%20is%20Google's%20secret,hired%20through%20this%20hiring%20challenge) recruiting challenge over a three week period. This involved five levels of programming challenges (completed in Python) that were presented as parts of a story battling the evil Commander Lambda.
+
+A short write up of some novel solutions to a few of the problems is available at [cianyleow.github.io/foobar](https://cianyleow.github.io/foobar)

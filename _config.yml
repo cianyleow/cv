@@ -1,0 +1,37 @@
+title: Cian Yong Leow
+host: 0.0.0.0
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "cv-entry"
+
+  -
+    scope:
+      path: "_posts/employment"
+      type: "posts"
+    values:
+      category: "employment"
+
+  -
+    scope:
+      path: "_posts/education"
+      type: "posts"
+    values:
+      category: "education"
+  -
+    scope:
+      path: "_posts/coding-projects"
+      type: "posts"
+    values:
+      category: "coding-projects"
+  -
+    scope:
+      path: "_posts/certifications"
+      type: "posts"
+    values:
+      category: "certifications"
+

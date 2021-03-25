@@ -1,0 +1,16 @@
+---
+title: IPAF (Dual) Mobile Vertical (3a) + Mobile Boom (3b)
+date: 2019-11-01
+badge:
+   text: Valid till 11/2024
+   icon: calendar-alt
+establishment:
+   text: International Powered Access Federation (IPAF)
+   link: https://www.ipaf.org
+certification:
+   number: OP/1777594
+   link: https://www.ipaf.org/en/verify-pal-card
+---
+An **IPAF** certification validates the ability of the user to safely and legally operate specified powered access platforms.
+
+The **Dual 3a + 3b** certification specifically covers the use of mobile vertical (scissor lifts) and mobile boom (self propelled boom) platforms.

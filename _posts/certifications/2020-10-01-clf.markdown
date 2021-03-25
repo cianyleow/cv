@@ -1,0 +1,14 @@
+---
+title: AWS Certified Cloud Practioner (CLF)
+date: 2020-10-01
+badge:
+   text: Valid till 11/2023
+   icon: calendar-alt
+establishment:
+   text: Amazon Web Services
+   link: https://aws.amazon.com/certification/
+certification:
+   number: 39JMS5SB1NE4QD3D
+   link: https://www.youracclaim.com/badges/5537a3ea-6641-4cd6-ae92-c605a1692ef8/public_url
+---
+The **AWS Certified Cloud Practioner** certification validates fundamental knowledge of cloud technologies, terminology and offerings with a specific focus on the AWS platform.

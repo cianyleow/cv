@@ -1,0 +1,15 @@
+---
+title:  Image Recognition for Data Collection
+toDate: 2020-04-01
+date:   2020-03-01
+establishment:
+   text: Rainfall Rescue Project
+   link: https://www.zooniverse.org/projects/edh/rainfall-rescue
+badge:
+   link: https://cianyleow.github.io/rainfall
+   text: View Related Write Up
+   icon: link
+---
+Developed an image recognition and basic machine learning workflow in Python on a Jupyter Notebook to extract and identify monthly rainfall records publicized by the Rainfall Rescue project with a > 95% accuracy.
+
+A short write up of my technical solution is available at [cianyleow.github.io/rainfall](https://cianyleow.github.io/rainfall)

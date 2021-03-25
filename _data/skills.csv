@@ -1,0 +1,30 @@
+type,skill,icon
+General,Collaborative,people-carry
+General,Logical,hand-spock
+General,Management,users
+General,Microsoft Word,file-word
+General,Microsoft Excel,file-excel
+General,Microsoft PowerPoint,file-powerpoint
+General,Professional Demeanour,user-tie
+General,Strong Communicator,people-arrows
+General,Willing to Travel,starship
+Software,Amazon Web Services,aws
+Software,BASH/Shell,terminal
+Software,CSS3,css3-alt
+Software,Git,git
+Software,HTML5,html5
+Software,Java,java
+Software,Javascript,js
+Software,Jira,jira
+Software,Linux,linux
+Software,Python,python
+Software,R,r-project
+Software,SQL,database
+Software,Ubuntu,ubuntu
+Software,VBA,file-excel
+Live Events,IPAF 3a/3b,
+Live Events,Cable Repair,tools
+Live Events,Moving Light Repair,
+Live Events,IP Networking,network-wired
+Live Events,Power Plot,
+Live Events,Project Management,project-diagram

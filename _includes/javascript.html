@@ -1,0 +1,18 @@
+
+<script>
+	const tabButtons = Array.from(document.getElementsByClassName('tab'));
+	const tabBodies = Array.from(document.getElementsByClassName('tabBody'));
+	
+	const removeClass = (els, className) => els.forEach(el => el.classList.remove(className));
+	
+	function processTabClick(tEl) {
+		removeClass(tabButtons, 'active');
+		removeClass(tabBodies, 'active');
+		tEl.classList.add('active');
+		document.getElementById(tEl.getAttribute('data-tabId')).classList.add('active');
+	}
+	
+	tabButtons.forEach(tabBtn => tabBtn.addEventListener('click', evt => processTabClick(evt.target)));
+	
+	processTabClick(tabButtons[0]);
+</script>

@@ -1,0 +1,17 @@
+---
+title: AWS Certified Solutions Architect - Associate (SAA)
+date: 2020-11-01
+badge:
+   text: Valid till 11/2023
+   icon: calendar-alt
+establishment:
+   text: Amazon Web Services
+   link: https://aws.amazon.com/certification/
+certification:
+   number: D1VNJW4DBBREQ395
+   link: https://www.youracclaim.com/badges/3067a506-b806-4fe5-88a3-1a0099ae63a2/public_url
+---
+The **AWS Certified Solutions Architected (Associate)** certification validates the abilities of an engineer to:
+* Effectively architect and deploy secure and robust applications on AWS technologies
+* Define a solution using architectural design principles based on customer requirements
+* Provide implementation guidance based on best practices throughout the project life cycle

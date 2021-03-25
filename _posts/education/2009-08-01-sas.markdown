@@ -1,0 +1,10 @@
+---
+title:  High School Diploma
+toDate: 2012-06-01
+date:   2009-08-01
+establishment:
+   text: Singapore American School
+   link: https://www.sas.edu.sg
+location: Singapore
+---
+Graduated with a 4.10 GPA having completed 8 Advanced Placement (AP) courses with '5' Score

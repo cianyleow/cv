@@ -1,0 +1,13 @@
+---
+title: Website Redevelopment
+toDate: 2019-03-01
+date:   2019-01-01
+establishment:
+   text: C.K. Leow & Associates
+   link: https://www.ckleow.md
+---
+Completed the redevelopment of a 10 year old SME website to take advantage of newer technologies and SEO optimizations.
+
+Rebuilt the website with HTML5, CSS3 and responsive web design to provide a seamless and enhanced user experience across all device types. Additionally performed SEO optimizations to ensure higher visibility and relevance on Google and Bing.
+
+Have continued to monitor and react to various metrics ([PageSpeed Insights](https://developers.google.com/speed), [Security Headers](https://securityheaders.com) and [Google Search Console](https://search.google.com/search-console/about)) to ensure peak web performance.

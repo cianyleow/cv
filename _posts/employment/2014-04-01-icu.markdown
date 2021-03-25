@@ -1,0 +1,11 @@
+---
+title: Floor Manager & Bar Supervisor
+toDate: 2016-06-01
+date: 2014-04-01
+establishment:
+   text: Imperial College Union Bars
+   link: https://www.imperialcollegeunion.org/food-drink
+location: London, UK
+
+---
+While at university, worked part time for two years as floor manager of the 1,000-capacity Imperial College Union venues, with bar supervisor duties (ensuring smooth operation of bar service) on non-club nights. Responsible for customer safety and welfare on the two weekly club nights and any organized events. Duties included coordinating security staff, dealing with customer issues and general oversight of 20 – 30 staff on club nights.

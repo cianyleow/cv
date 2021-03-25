@@ -1,0 +1,12 @@
+---
+title:  Financial Markets Advisory Analyst
+toDate: 2018-08-01
+date:   2016-08-01
+establishment:
+   text: BlackRock
+   link: https://www.blackrock.com
+location: London
+---
+Financial Markets Advisory (FMA) is the consultancy arm of BlackRock Solutions (BRS). They support clients across a wide range of risk, analytical, capital markets, and strategic advisory services. The Markets & Analytics Group (MAG) within FMA is responsible for all analytical work provided to clients - including models, data analytics and market knowledge.
+
+My responsibilities in MAG were focused on building out and maintaining analytical capabilities for clients based on agreed specifications. This included development of bespoke financial models (cash-flow projection model for a bank’s credit risk department), analysis of large data sets (loan level data used for valuation and sale preparation) and valuation of assets (cash flow projections and data management). All work was performed in Excel/VBA and, for more data-intensive work, R scripting. In addition to my development work, I was required to travel regularly to deliver technical training and present results to clients.

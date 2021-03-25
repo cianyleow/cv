@@ -1,0 +1,13 @@
+---
+title:  MEng Electrical & Information Engineering
+toDate: 2016-06-01
+date:   2012-09-01
+establishment:
+   text: Imperial College London
+   link: https://www.imperial.ac.uk
+location: London, UK
+badge:
+   text: First Class Honours
+   icon: diploma
+---
+**Modules:** High Performance Computing, Machine Learning, Human Centred Robotics, Networks & Web Security, Software Engineering for Industry, Distributed Computing

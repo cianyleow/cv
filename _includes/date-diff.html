@@ -1,0 +1,20 @@
+{% assign fMonth = include.fromDate | date: '%m' %}
+{% assign fYear = include.fromDate | date: '%Y' %}
+{% assign tMonth = include.toDate | date: '%m' %}
+{% assign tYear = include.toDate | date: '%Y' %}
+
+{% assign dMonth = tMonth | minus: fMonth %}
+{% assign dYear = tYear | minus: fYear %}
+
+{% if dMonth < 0 %}
+	{% assign dMonth = dMonth | plus: 12 %}
+	{% assign dYear = dYear | minus: 1 %}
+{% endif %}
+
+{% if dYear > 0 and dMonth > 0 %}
+	{{ dYear | pluralize: "year" }}, {{ dMonth | pluralize: "month" }}
+{% elsif dYear > 0 %}
+	{{ dYear | pluralize: "year" }}
+{% elsif dMonth > 0 %}
+	{{ dMonth | pluralize: "month" }}
+{% endif %}

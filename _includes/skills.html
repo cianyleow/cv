@@ -1,0 +1,24 @@
+<section> <!-- BeginSection: {{ include.title }} -->
+	{% include section-header.html title=include.title icon=include.icon %}
+	{% assign tabGroups = include.data | group_by: 'type' %}
+	<nav class="tabs">
+		{% for tabGroup in tabGroups %}
+			<div class="tab" data-tabId="{{ tabGroup.name }}Body">{{ tabGroup.name }}</div>
+		{% endfor %}
+	</nav>
+
+	{% for tabGroup in tabGroups %}
+		{% assign sortedItems = tabGroup.items | sort: 'skill' %}
+		<section class="tabBody" id="{{ tabGroup.name }}Body"> <!-- BeginSection: {{ tabGroup.name }} Tab -->
+			<div class="title">{{ tabGroup.name }}</div>
+			<ul>
+				{% for item in sortedItems %}
+					<li>
+						{% include icon.html name=item.icon %}
+						<span>{{ item.skill }}</span>
+					</li>
+				{% endfor %}
+			</ul>
+		</section> <!-- EndSection: {{ tabGroup.name }} Tab -->
+	{% endfor %}
+</section> <!-- EndSection: {{ include.title }} -->
