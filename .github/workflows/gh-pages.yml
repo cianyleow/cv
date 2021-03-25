@@ -24,10 +24,11 @@ jobs:
 
           format_output: true
 
-          prettier_opts: '{ "useTabs": true, "printWidth": 400 }'
+          prettier_opts: '{ "useTabs": true, "printWidth": 1000 }'
 
       - name: 🚀 deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
+          exclude_assets: '.github,certifications/**.html,coding-projects/**.html,education/**.html,employment/**.html'
