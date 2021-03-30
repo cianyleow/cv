@@ -377,7 +377,6 @@ nav.tabs > .active:after {
 section.tabBody {
 	display: none;
 	box-sizing: border-box;
-	padding: 5px;
 	width: 100%;
 	border: 1px solid #2E74B5;
 	margin-top: 15px;
@@ -392,7 +391,7 @@ section.active {
 }
 
 section.tabBody > ul {
-	padding: 0;
+	padding: 5px;
 	margin: 0;
 }
 
@@ -403,13 +402,15 @@ section.tabBody > ul:after {
 }
 
 section.tabBody > ul > li {
-	height: 20px;
+	height: 32px;
 	line-height: 20px;
 	display: block;
 	float: left;
 	margin: 5px;
 	padding: 5px 10px;
 	width: 193px;
+	box-sizing: border-box;
+	width: calc((100% - 30px) / 3);
 	border: 1px solid #ccc;
 	border-radius: 6px;
 }
