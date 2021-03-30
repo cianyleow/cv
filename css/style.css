@@ -44,7 +44,7 @@ header.main > .name {
 	line-height: 0.75em;
 	margin-top: -6px;
 	text-transform: uppercase;
-	font-family: 'Roboto Medium';
+	font-family: 'Roboto', sans-serif;
 	float: left;
 }
 
@@ -129,7 +129,7 @@ section > header > .icon > svg {
 
 section > header > .title {
 	width: 613px;
-	font-family: 'Roboto Medium';
+	font-family: 'Roboto', sans-serif;
 	font-size: 25px;
 	color: #2E74B5;
 }
@@ -204,7 +204,7 @@ article > header > .details {
 
 article > header > .details > .title {
 	font-weight: 700;
-	font-family: 'Roboto Medium';
+	font-family: 'Roboto', sans-serif;
 }
 
 article > header > .details > .title-badge {
@@ -213,7 +213,7 @@ article > header > .details > .title-badge {
 
 article > header > .details > .title-badge > span {
 	font-weight: 700;
-	font-family: 'Roboto Medium';
+	font-family: 'Roboto', sans-serif;
 }
 
 article > header > .details > .title-badge > .badge {
@@ -258,7 +258,7 @@ article > header > .details > .title-badge > .badge > div {
 	float: left;
 	display: inline-block;
 	height: 20px;
-	font-family: 'Roboto Medium';
+	font-family: 'Roboto', sans-serif;
 	font-size: 12px;
 	line-height: 20px;
 	color: #FFF;
@@ -270,20 +270,20 @@ article > header > .details > .title-badge > a.badge > div {
 
 article > header > .details > .establishment {
 	font-size: 12px;
-	font-family: 'Roboto Medium';
+	font-family: 'Roboto', sans-serif;
 	color: #2E74B5;
 }
 
 article > header > .details > strong {
 	font-size: 12px;
 	font-weight: 700;
-	font-family: 'Roboto Medium';
+	font-family: 'Roboto', sans-serif;
 	color: #2E74B5;
 }
 
 article > header > .details > .location {
 	font-size: 12px;
-	font-family: 'Roboto Medium';
+	font-family: 'Roboto', sans-serif;
 	color: #2E74B5;
 }
 
@@ -309,7 +309,7 @@ nav.tabs > .tab {
 	color: #888;
 	box-sizing: border-box;
 	text-align: center;
-	font-family: 'Roboto Medium';
+	font-family: 'Roboto', sans-serif;
 	float: left;
 	width: 229px;
 	height: 40px;
