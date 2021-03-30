@@ -1,16 +1,24 @@
 body, html {
 	margin: 0;
 	padding: 0;
-	background: #EEE;
 }
 
 .container {
 	box-sizing: border-box;
 	width: 768px;
-	margin: 40px auto;
-	background: #FFF;
 	padding: 40px;
-	border: 0.5px solid #888;
+}
+
+@media screen and (min-width: 769px) {
+	body, html {
+		background: #EEE;
+	}
+
+	.container {
+		border: 0.5px solid #888;
+		margin: 40px auto;
+		background: #FFF;
+	}
 }
 
 .clearfix:after {
@@ -68,7 +76,7 @@ header.main > .links > a {
 header.main > .links > a > div {
 	float: right;
 	height: 20px;
-	width: 0;
+	width: 76px;
 	overflow: hidden;
 	line-height: 20px;
 	font-size: 16px;
@@ -81,16 +89,26 @@ header.main > .links > a > svg {
 	height: 20px;
 	width: 20px;
 	margin-left: 4px;
-	fill: #CCC;
-}
-
-header.main > .links > a:hover > svg {
 	fill: #444;
 }
 
-header.main > .links > a:hover > div {
-	width: 76px;
-	transition: 0.7s;
+@media screen and (min-width: 769px) {
+	header.main > .links > a > div {
+		width: 0;
+	}
+
+	header.main > .links > a > svg {
+		fill: #CCC;
+	}
+
+	header.main > .links > a:hover > svg {
+		fill: #444;
+	}
+
+	header.main > .links > a:hover > div {
+		width: 76px;
+		transition: 0.7s;
+	}
 }
 
 /* Section Styling */
