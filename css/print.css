@@ -1,0 +1,408 @@
+@page {
+	margin: 25mm;
+}
+
+body, html {
+	margin: 0;
+	padding: 0;
+	width: 210mm;
+}
+
+.container {
+	width: 210mm;
+	padding-top: 8px;
+}
+
+.clearfix:after {
+	display: table;
+	clear: both;
+	content: '';
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+	border-bottom: 1px dotted;
+}
+
+header.main {
+	border-bottom: 1.5px solid #000;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+header.main:after {
+	display: table;
+	clear: both;
+	content: '';
+}
+
+header.main > .name {
+	width: 586px;
+	font-size: 60px;
+	line-height: 0.75em;
+	margin-top: -6px;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	float: left;
+}
+
+header.main > .subtitle {
+	display: none;
+}
+
+header.main > .links {
+	float: right;
+	width: 100px;
+}
+
+header.main > .links > a {
+	display: block;
+	height: 22px;
+	padding-top: 1px;
+	width: 100px;
+	border-bottom: none;
+}
+
+header.main > .links > a > div {
+	float: right;
+	height: 20px;
+	width: 76px;
+	overflow: hidden;
+	line-height: 20px;
+	font-size: 16px;
+	color: #444;
+	text-align: right;
+}
+
+header.main > .links > a > svg {
+	float: right;
+	height: 20px;
+	width: 20px;
+	margin-left: 4px;
+	fill: #444;
+}
+
+@media screen and (min-width: 769px) {
+	header.main > .links > a > div {
+		width: 0;
+	}
+
+	header.main > .links > a > svg {
+		fill: #CCC;
+	}
+
+	header.main > .links > a:hover > svg {
+		fill: #444;
+	}
+
+	header.main > .links > a:hover > div {
+		width: 76px;
+		transition: 0.7s;
+	}
+}
+
+/* Section Styling */
+main > section {
+	padding-bottom: 1em;
+	page-break-inside: avoid;
+}
+
+main > section.subtitle {
+	display: none;
+}
+
+main > section:last-child {
+	padding-bottom: 0 !important;
+}
+
+section > header {
+	margin-bottom: 10px;
+}
+
+section > header > .icon {
+	float: left;
+	width: 75px;
+	height: 25px;
+}
+
+section > header > .icon > svg {
+	height: 25px;
+	width: 25px;
+	float: right;
+	margin-top: 4px;
+	margin-right: 10px;
+}
+
+section > header > .title {
+	width: 613px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 25px;
+	color: #2E74B5;
+}
+
+/* Article Styling */
+section > article:last-child {
+	padding-bottom: 0 !important;
+}
+
+article {
+	padding-bottom: 1em;
+}
+
+article > header {
+
+}
+
+article > header:after {
+	display: table;
+	clear: both;
+	content: '';
+}
+
+article > header > .time {
+	float: left;
+	width: 65px;
+	margin-right: 10px;
+	text-align: right;
+	font-family: 'Bembo Std';
+	position: relative;
+}
+
+article > header > .time:hover > .tooltip {
+	visibility: visible;
+	opacity: 1;
+	transition: 0.7s;
+}
+
+article > header > .time > .tooltip {
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	top: 110%;
+	left: 50%;
+	width: 70px;
+	margin-left: -35px;
+	text-align: center;
+	font-size: 12px;
+	background: #444;
+	z-index: 1;
+	padding: 5px 2px;
+	border-radius: 5px;
+	color: #fff;
+}
+
+article > header > .time > .tooltip:after {
+	content: '';
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent #444 transparent;	
+}
+
+article > header > .details {
+	float: right;
+	width: calc(100% - 75px);
+}
+
+article > header > .details > .title {
+	font-weight: 700;
+	font-family: 'Roboto', sans-serif;
+}
+
+article > header > .details > .title-badge {
+	width: 100%;
+}
+
+article > header > .details > .title-badge > span {
+	font-weight: 700;
+	font-family: 'Roboto', sans-serif;
+}
+
+article > header > .details > .title-badge > .badge {
+	float: right;
+	height: 20px;
+	border-radius: 8px;
+	padding: 2px 6px;
+	border: 1px solid #444;
+}
+
+article > header > .details > .title-badge > .badge:after {
+	display: table;
+	content: '';
+	clear: both;
+}
+
+article > header > .details > .title-badge > a.badge {
+	display: none;
+}
+
+article > header > .details > .title-badge > .badge > svg {
+	margin-right: 5px;
+	margin-top: 3px;
+	float: left;
+	width: 14px;
+	height: 14px;
+	fill: #444;
+}
+
+article > header > .details > .title-badge > .badge > div {
+	float: left;
+	display: inline-block;
+	height: 20px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	line-height: 20px;
+	color: #444;
+}
+
+article > header > .details > .establishment {
+	font-size: 12px;
+	font-family: 'Roboto', sans-serif;
+	color: #2E74B5;
+}
+
+article > header > .details > strong {
+	font-size: 12px;
+	font-weight: 700;
+	font-family: 'Roboto', sans-serif;
+	color: #2E74B5;
+}
+
+article > header > .details > .location {
+	font-size: 12px;
+	font-family: 'Roboto', sans-serif;
+	color: #2E74B5;
+}
+
+article > .content {
+	font-family: 'Bembo Std';
+	margin-left: 75px;
+	margin-top: 0.3em;
+	text-align: justify;
+}
+
+article > .content > ul, article > .content > p:last-child {
+	margin-bottom: 0;
+}
+
+article > .content > p:first-child {
+	margin-top: 0;
+}
+
+nav.tabs {
+	width: 100%;
+}
+
+nav.tabs:after {
+	display: table;
+	content: '';
+	clear: both;
+}
+
+nav.tabs > .tab {
+	border-top: 1px solid #ccc;
+	color: #888;
+	box-sizing: border-box;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	float: left;
+	width: 33.3333333333%;
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid #ccc;
+	cursor: pointer;
+}
+
+nav.tabs > .tab:hover {
+	color: #444;
+	background: #F8F8F8;
+}
+
+nav.tabs > .active {
+	color: #2E74B5 !important;
+	border-bottom: 2px solid #2E74B5;
+	background: #FFF;
+	position: relative;
+}
+
+nav.tabs > .active:after {
+	display: block;
+	width: 100%;
+	position: absolute;
+	content: '';
+	height: 16px;
+	box-sizing: border-box;
+	bottom: -18px;
+	border-left: 1px solid #2e74b5;
+	border-right: 1px solid #2e74b5;
+	background: #FFF;
+	z-index: 1;
+}
+
+section.tabBody {
+	display: none;
+	box-sizing: border-box;
+	width: 100%;
+	border: 1px solid #2E74B5;
+	margin-top: 15px;
+}
+
+section.tabBody > .title {
+	display: none;
+}
+
+section.active {
+	display: block;
+}
+
+section.tabBody > ul {
+	padding: 5px;
+	margin: 0;
+}
+
+section.tabBody > ul:after {
+	display: table;
+	clear: both;
+	content: '';
+}
+
+section.tabBody > ul > li {
+	height: 32px;
+	line-height: 20px;
+	display: block;
+	float: left;
+	margin: 5px;
+	padding: 5px 10px;
+	width: 193px;
+	box-sizing: border-box;
+	width: calc((100% - 30px) / 3);
+	border: 1px solid #ccc;
+	border-radius: 6px;
+}
+
+section.tabBody > ul > li:after {
+	display: table;
+	clear: both;
+	content: '';
+}
+
+section.tabBody > ul > li > span {
+	display: block;
+	float: left;
+	height: 20px;
+	line-height: 20px;
+	font-family: 'Bembo Std';
+}
+
+section.tabBody > ul > li > svg {
+	float: left;
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+	fill: #444;
+}
+	
