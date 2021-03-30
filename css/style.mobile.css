@@ -1,3 +1,7 @@
+.download {
+	display: none;
+}
+
 /* Main Styles */
 body, html {
 	margin: 0;

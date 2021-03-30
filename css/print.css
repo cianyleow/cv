@@ -1,3 +1,7 @@
+.download {
+	display: none;
+}
+
 .print-show {
 	visibility: visible;
 }
