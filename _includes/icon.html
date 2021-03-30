@@ -1,2 +1,3 @@
-{% assign icon = site.data.icons[include.name] %}
+{% assign iconName = include.name | default: "check" %}
+{% assign icon = site.data.icons[iconName] %}
 <svg data-icon="{{ include.name }}" role="img" viewBox="{{ icon.viewBox }}"><path d="{{ icon.dString }}"></path></svg>
