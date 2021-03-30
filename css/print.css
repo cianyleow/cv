@@ -1,5 +1,5 @@
 @page {
-	margin: 25mm;
+	margin: 14.5mm 20mm;
 }
 
 body, html {
@@ -294,115 +294,60 @@ article > .content > p:first-child {
 }
 
 nav.tabs {
-	width: 100%;
-}
-
-nav.tabs:after {
-	display: table;
-	content: '';
-	clear: both;
-}
-
-nav.tabs > .tab {
-	border-top: 1px solid #ccc;
-	color: #888;
-	box-sizing: border-box;
-	text-align: center;
-	font-family: 'Roboto', sans-serif;
-	float: left;
-	width: 33.3333333333%;
-	height: 40px;
-	line-height: 40px;
-	border-bottom: 1px solid #ccc;
-	cursor: pointer;
-}
-
-nav.tabs > .tab:hover {
-	color: #444;
-	background: #F8F8F8;
-}
-
-nav.tabs > .active {
-	color: #2E74B5 !important;
-	border-bottom: 2px solid #2E74B5;
-	background: #FFF;
-	position: relative;
-}
-
-nav.tabs > .active:after {
-	display: block;
-	width: 100%;
-	position: absolute;
-	content: '';
-	height: 16px;
-	box-sizing: border-box;
-	bottom: -18px;
-	border-left: 1px solid #2e74b5;
-	border-right: 1px solid #2e74b5;
-	background: #FFF;
-	z-index: 1;
+	display: none;
 }
 
 section.tabBody {
-	display: none;
-	box-sizing: border-box;
-	width: 100%;
-	border: 1px solid #2E74B5;
-	margin-top: 15px;
+	width: calc(100% - 75px);
+	border-bottom: 1px solid #888;
+	margin-left: 75px;
+	padding-bottom: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+section.tabBody:last-child {
+	border-bottom: none;
+	margin-bottom: 0;
+	padding-bottom: 0;
 }
 
 section.tabBody > .title {
-	display: none;
-}
-
-section.active {
-	display: block;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
 }
 
 section.tabBody > ul {
-	padding: 5px;
+	padding: 0;
 	margin: 0;
-}
-
-section.tabBody > ul:after {
-	display: table;
-	clear: both;
-	content: '';
+	margin-top: 0.1em;
 }
 
 section.tabBody > ul > li {
-	height: 32px;
-	line-height: 20px;
-	display: block;
-	float: left;
-	margin: 5px;
-	padding: 5px 10px;
-	width: 193px;
-	box-sizing: border-box;
-	width: calc((100% - 30px) / 3);
-	border: 1px solid #ccc;
-	border-radius: 6px;
-}
-
-section.tabBody > ul > li:after {
-	display: table;
-	clear: both;
-	content: '';
-}
-
-section.tabBody > ul > li > span {
-	display: block;
-	float: left;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	font-size: 16px;
 	height: 20px;
 	line-height: 20px;
-	font-family: 'Bembo Std';
 }
 
 section.tabBody > ul > li > svg {
-	float: left;
-	width: 20px;
-	height: 20px;
-	margin-right: 5px;
-	fill: #444;
+	display: none;
 }
-	
+
+section.tabBody > ul > li > span:after {
+	display: inline-block;
+	content: ',';
+	margin: 0;
+	padding: 0;
+}
+
+section.tabBody > ul > li:last-child > span:after {
+	display: none;
+}
+
+section.tabBody > ul > li > span {
+	margin: 0;
+	padding: 0;
+	font-family: 'Bembo Std';
+}
