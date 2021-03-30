@@ -115,8 +115,8 @@ header.main > .links > a > svg {
 main > section {
 	border-bottom: 2px solid #000;
 	margin-bottom: 1em;
+	padding-bottom: 1em;
 }
-
 
 main > section.subtitle {
 	display: none;
@@ -124,7 +124,8 @@ main > section.subtitle {
 
 main > section:last-child {
 	border-bottom: none !important;
-	margin-bottom: none !important;
+	margin-bottom: 0 !important;
+	padding-bottom: 0 !important;
 }
 
 section > header {
@@ -155,10 +156,13 @@ section > header > .title {
 /* Article Styling */
 section > article:last-child {
 	border-bottom: none !important;
+	margin-bottom: 0 !important;
+	padding-bottom: 0 !important;
 }
 
 article {
 	border-bottom: 1px dotted #888;
+	padding-bottom: 1em;
 	margin-bottom: 1em;
 }
 
@@ -308,8 +312,16 @@ article > header > .details > .location {
 article > .content {
 	font-family: 'Bembo Std';
 	margin-left: 75px;
-	margin-top: -0.7em;
+	margin-top: 0.3em;
 	text-align: justify;
+}
+
+article > .content > ul, article > .content > p:last-child {
+	margin-bottom: 0;
+}
+
+article > .content > p:first-child {
+	margin-top: 0;
 }
 
 nav.tabs {
@@ -350,7 +362,7 @@ nav.tabs > .active {
 
 nav.tabs > .active:after {
 	display: block;
-	width: 229px;
+	width: 100%;
 	position: absolute;
 	content: '';
 	height: 16px;
@@ -369,7 +381,6 @@ section.tabBody {
 	width: 100%;
 	border: 1px solid #2E74B5;
 	margin-top: 15px;
-	margin-bottom: 1em;
 }
 
 section.tabBody > .title {
