@@ -27,6 +27,9 @@ jobs:
       - name: generate short SHA
         id: vars
         run: echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
+        
+      - name: create PDF directory
+        run: mkdir ./_site/pdf
       
       - name: create pdf of web page
         uses: fifsky/html-to-pdf-action@master
