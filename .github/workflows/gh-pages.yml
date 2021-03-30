@@ -39,7 +39,7 @@ jobs:
           pdfOptions: '{"format": "A4"}'
 
       - name: add pdf link to page
-        run: sed -i "s|#pdf|/pdf/CianYongLeow_CV_${{ steps.vars.outputs.sha_short }}.pdf|g" ./_site/index.html
+        run: sed -i "s|#pdf|pdf/CianYongLeow_CV_${{ steps.vars.outputs.sha_short }}.pdf|g" ./_site/index.html
 
       - name: 🚀 deploy
         uses: peaceiris/actions-gh-pages@v3
