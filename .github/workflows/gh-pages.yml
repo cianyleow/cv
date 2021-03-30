@@ -33,7 +33,7 @@ jobs:
         with:
           htmlFile: ./_site/index.html
           outputFile: ./_site/pdf/CianYongLeow_CV_${{ steps.vars.outputs.sha_short }}.pdf
-          pdfOptions: '{format: "A4"}'
+          pdfOptions: '{"format": "A4"}'
 
       - name: 🚀 deploy
         uses: peaceiris/actions-gh-pages@v3
