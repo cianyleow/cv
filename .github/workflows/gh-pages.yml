@@ -21,10 +21,19 @@ jobs:
         uses: limjh16/jekyll-action-ts@v2
         with:
           enable_cache: true
-
           format_output: true
-
           prettier_opts: '{ "useTabs": true, "printWidth": 1000 }'
+          
+      - name: generate short SHA
+        id: vars
+        run: echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
+      
+      - name: create pdf of web page
+        uses: fifsky/html-to-pdf-action@master
+        with:
+          htmlFile: ./_site/index.html
+          outputFile: ./_site/pdf/CianYongLeow_CV_${{ steps.vars.outputs.sha_short }}.pdf
+          pdfOptions: '{format: "A4"}'
 
       - name: 🚀 deploy
         uses: peaceiris/actions-gh-pages@v3
