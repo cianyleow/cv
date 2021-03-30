@@ -1,3 +1,7 @@
+.print-show {
+	display: none;
+}
+
 body, html {
 	margin: 0;
 	padding: 0;
@@ -316,7 +320,7 @@ article > .content {
 	text-align: justify;
 }
 
-article > .content > ul, article > .content > p:last-child {
+article > .content > p, article > .content > ul{
 	margin-bottom: 0;
 }
 
