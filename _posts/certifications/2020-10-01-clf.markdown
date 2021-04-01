@@ -10,5 +10,7 @@ establishment:
 certification:
    number: 39JMS5SB1NE4QD3D
    link: https://www.youracclaim.com/badges/5537a3ea-6641-4cd6-ae92-c605a1692ef8/public_url
+print:
+   hideContent: true
 ---
 The **AWS Certified Cloud Practioner** certification validates fundamental knowledge of cloud technologies, terminology and offerings with a specific focus on the AWS platform.

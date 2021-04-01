@@ -10,6 +10,8 @@ establishment:
 certification:
    number: OP/1777594
    link: https://www.ipaf.org/en/verify-pal-card
+print:
+   hideContent: true
 ---
 An **IPAF** certification validates the ability of the user to safely and legally operate specified powered access platforms.
 

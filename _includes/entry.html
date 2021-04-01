@@ -39,7 +39,11 @@
 			{% if include.post.toDate %}<div class="tooltip">{% include date-diff.html toDate=include.post.toDate fromDate=include.post.date %}</div>{% endif %}
 		</div>
 	</header>
-	<div class="content">
+	{% if include.post.print.hideContent %}
+		<div class="content print-hide">
+	{% else %}
+		<div class="content">
+	{% endif %}
 		{{ include.post.content }}
 	</div>
 </article>

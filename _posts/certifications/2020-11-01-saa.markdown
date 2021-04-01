@@ -10,6 +10,8 @@ establishment:
 certification:
    number: D1VNJW4DBBREQ395
    link: https://www.youracclaim.com/badges/3067a506-b806-4fe5-88a3-1a0099ae63a2/public_url
+print:
+   hideContent: true
 ---
 The **AWS Certified Solutions Architected (Associate)** certification validates the abilities of an engineer to:
 * Effectively architect and deploy secure and robust applications on AWS technologies
