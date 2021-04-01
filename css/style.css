@@ -1,7 +1,3 @@
-.download {
-	display: none;
-}
-
 .print-show {
 	display: none;
 }
@@ -15,6 +11,7 @@ body, html {
 	box-sizing: border-box;
 	width: 768px;
 	padding: 40px;
+	margin-bottom: 40px;
 }
 
 @media screen and (min-width: 769px) {
@@ -25,6 +22,7 @@ body, html {
 	.container {
 		border: 0.5px solid #888;
 		margin: 40px auto;
+		margin-bottom: 80px;
 		background: #FFF;
 	}
 }
@@ -445,3 +443,73 @@ section.tabBody > ul > li > svg {
 	fill: #444;
 }
 	
+footer {
+	width: calc(100% - 80px);
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: #FFF;
+	border-top: 2px solid #444;
+	height: 20px;
+	padding: 10px 40px;
+	box-shadow: 0 0.5mm 2mm rgba(0, 0, 0, 0.3);
+	z-index: 9;
+}
+
+footer > .center {
+	width: 100%;
+}
+
+footer > .center > .copyright {
+	float: left;
+	font-family: 'Bembo Std';
+}
+
+footer > .center > .download {
+	display: block;
+	float: right;
+	height: 20px;
+	line-height: 20px;
+	text-decoration: none;
+	border: none;
+	color: #444;
+	fill: #888;
+}
+
+footer > .center > .download:hover {
+	fill: #444;
+	color: #000;
+}
+
+footer > .center > .download > svg {
+	float: left;
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+}
+
+footer > .center > .download > span {
+	float: left;
+	font-family: 'Roboto', sans-serif;
+	height: 20px;
+	line-height: 20px;
+}
+
+footer > .center:after, footer > .center > .download:after {
+	display: table;
+	content: '';
+	clear: both;
+}
+
+
+@media screen and (min-width: 769px) {
+	footer {
+		width: 100%;
+		padding: 10px 0;
+	}
+
+	footer > .center {
+		width: 768px;
+		margin: 0 auto;
+	}
+}
