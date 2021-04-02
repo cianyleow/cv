@@ -6,7 +6,7 @@
 				<span>{{ include.post.title }}</span>
 				{% if include.post.badge %}
 					{% if include.post.badge.link %}
-						<a class="badge" href="{{ include.post.badge.link }}">
+						<a class="badge" href="{{ include.post.badge.link }}" target="_blank">
 							{% include icon.html name=include.post.badge.icon %}
 							<div>{{ include.post.badge.text }}</div>
 						</a>
@@ -18,25 +18,33 @@
 					{% endif %}
 				{% endif %}
 			</div>
-			{% if include.post.establishment %}
-				{% if include.post.establishment.link %}
-					<a class="establishment" href="{{ include.post.establishment.link }}">{{ include.post.establishment.text }}</a>
-				{% else %}
-					<span class="location">{{ include.post.establishment.text }}</span>
-				{% endif %}
-				
-				{% if include.post.location %} | {% endif %}
-				{% if include.post.certification %} | {% endif %}
+			{% if include.post.establishment.link %}
+				<a href="{{ include.post.establishment.link }}" target="_blank">{{ include.post.establishment.text }}</a>
+			{% else %}
+				<span>{{ include.post.establishment.text }}</span>
 			{% endif %}
-			{% if include.post.location %}<span class="location">{{ include.post.location }}</span>{% endif %}
+
+			{% if include.post.location %}
+				<span>{{ include.post.location }}</span>
+			{% endif %}
+		
 			{% if include.post.certification %}
-				<strong>Certification Number:</strong> <a class="establishment" href="{{ include.post.certification.link }}">{{ include.post.certification.number }}</a>
+				<strong>Certification Number: </strong>
+				<a href="{{ include.post.certification.link }}" target="_blank">{{ include.post.certification.number }}</a>
 			{% endif %}
 		</div>
 		<div class="time">
-			{% if include.post.toDate %}<div class="to">{{ include.post.toDate | date: "%m/%Y" }}</div>{% endif %}
+			{% if include.post.toDate %}
+				<div class="to">{{ include.post.toDate | date: "%m/%Y" }}</div>
+			{% endif %}
+			
 			<div class="from">{{ include.post.date | date: "%m/%Y" }}</div>
-			{% if include.post.toDate %}<div class="tooltip">{% include date-diff.html toDate=include.post.toDate fromDate=include.post.date %}</div>{% endif %}
+			
+			{% if include.post.toDate %}
+				<div class="tooltip">
+					{% include date-diff.html toDate=include.post.toDate fromDate=include.post.date %}
+				</div>
+			{% endif %}
 		</div>
 	</header>
 	{% if include.post.print.hideContent %}
