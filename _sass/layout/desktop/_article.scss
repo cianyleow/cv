@@ -1,0 +1,89 @@
+main > section > article {
+	border-bottom: 1px dotted #888;
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+
+	@include fix-last();
+}
+
+main > section > article > header {
+	@extend %clearfix;
+
+	> .time {
+		float: left;
+		width: 65px;
+		margin-right: 10px;
+		text-align: right;
+		position: relative;
+
+		@include tooltip(70, #444);
+	}
+
+	> .details {
+		float: right;
+		width: calc(100% - 75px);
+
+		font-family: $TitleFont;
+		font-size: 12px;
+		color: $HiLiteBlue;
+
+		> .title-badge {
+			@extend %clearfix;
+
+			width: 100%;
+
+			> span {
+				font-weight: 700;
+				color: #000;
+				font-size: 16px;
+			}
+
+			> .badge {
+				float: right;
+				@include reset-font-height(20px);
+				background: #444;
+				border-radius: 8px;
+				padding: 2px 6px;
+				fill: #FFF;
+				color: #FFF;
+
+				@include icon-text(5px, 14px);
+
+				> svg {
+					margin-top: 3px;
+				}
+			}
+
+			> a.badge {
+				background: none;
+				border: 1px solid #444;
+				color: #444;
+				fill: #444;
+
+				&:hover {
+					background: #E8E8E8;
+				}
+			}
+		}
+
+		> a {
+			border-bottom: 1px dotted;
+
+			@include separator-bar();
+		}
+	}
+}
+
+main > section > article > .content {
+	margin-left: 75px;
+	margin-top: 0.3em;
+	text-align: justify;
+
+	> p, ul {
+		margin-bottom: 0;
+	}
+
+	> p:first-child {
+		margin-top: 0;
+	}
+}

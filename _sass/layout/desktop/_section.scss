@@ -1,0 +1,32 @@
+main > section {
+	@extend %clearfix;
+
+	border-bottom: 2px solid #000;
+	margin-bottom: 1em;
+	padding-bottom: 1em;
+
+	@include fix-last();
+}
+
+main > section > header {
+	margin-bottom: 10px;
+		
+	> .icon {
+		float: left;
+		width: 75px;
+		height: 25px;
+
+		> svg {
+			@include square(25px);
+			float: right;
+			margin-right: 10px;
+		}
+	}
+
+	> .title {
+		width: calc(100% - 75px);
+		font-family: $TitleFont;
+		font-size: 25px;
+		color: $HiLiteBlue;
+	}
+}

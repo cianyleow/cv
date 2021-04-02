@@ -1,0 +1,40 @@
+nav.tabs {
+	display: none;
+}
+
+section.tabBody {
+	padding: 0 10px;
+	margin-top: 15px;
+	margin-bottom: 1em;
+
+	> .title {
+		margin: 10px;
+		padding-bottom: 5px;
+		
+		border-bottom: 1px solid #444;
+		
+		font-family: $TitleFont;
+		font-weight: 700;
+		color: #444;
+	}
+
+	> ul {
+		@extend %clearfix;
+
+		padding: 0;
+		margin: 0 5px;
+
+		> li {
+			display: block;
+			float: left;
+			@include reset-font-height(20px);
+	
+			margin: 5px;
+			padding: 3px 6px;
+			border-radius: 6px;
+			border: 1px solid #CCC;
+
+			@include icon-text();
+		}
+	}
+}

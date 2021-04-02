@@ -1,0 +1,57 @@
+header.main {
+	@extend %clearfix;
+
+	position: fixed;
+	top: 0;
+	width: calc(100% - 40px);
+	padding: 20px;
+	z-index: 2;
+	background: $HiLiteBlue;
+	font-family: $TitleFont;
+	color: #FFF;
+
+	> .name {
+		position: relative;
+		width: 100%;
+		
+		@include reset-font-height(50px);
+		font-size: 40px;
+		
+		text-transform: uppercase;
+
+		@include small-mobile {
+			> .middle {
+				display: none;
+			}
+		}
+	}
+
+	> .subtitle {
+		float: left;
+		@include reset-font-height(20px);
+	}
+
+	.links {
+		@extend %clearfix;
+
+		float: right;
+		width: 56px;
+		fill: #FFF;
+
+		> a {
+			float: left;
+			display: block;
+			width: 20px;
+			height: 20px;
+			margin: 0 4px;
+
+			> div {
+				display: none;
+			}
+
+			> svg {
+				margin-bottom: -3px;
+			}
+		}
+	}
+}

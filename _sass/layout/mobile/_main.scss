@@ -1,0 +1,15 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	box-sizing: border-box;
+	width: 100%;
+	position: relative;
+}
+
+.container > main {
+	padding-top: 110px;
+	z-index: 1;
+}

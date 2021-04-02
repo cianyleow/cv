@@ -1,0 +1,112 @@
+$TitleFont: 'Roboto', sans-serif;
+$TextFont: 'Bembo Std';
+$HiLiteBlue: #2E74B5;
+
+$tablet-width: 768px;
+
+@mixin separator-bar {
+	+ span, + strong {
+		&:before {
+			content: ' | ';
+			color: #000;
+		}
+	}
+}
+
+@mixin fix-last {
+	&:last-child {
+		border-bottom: none;
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+}
+
+@mixin square($dim) {
+	width: $dim;
+	height: $dim;
+}
+
+@mixin icon-text($margin: 5px, $dim: 20px) {
+	@extend %clearfix;
+
+	> svg {
+		float: left;
+		@include square($dim);
+		margin-right: $margin;
+		fill: inherit;
+	}
+
+	> span, > div {
+		float: left;
+		color: inherit;
+	}
+}
+
+@mixin reset-font-height($dim) {
+	height: $dim;
+	line-height: $dim;
+}
+
+@mixin tooltip($width, $bg-color) {
+	&:hover > .tooltip {
+		visibility: visible;
+		opacity: 1;
+		transition: 0.7s;
+	}
+
+	> .tooltip {
+		visibility: hidden;
+		opacity: 0;
+		position: absolute;
+		top: 110%;
+		left: 50%;
+		width: #{$width}px;
+		margin-left: #{-$width/2}px;
+		text-align: center;
+		font-size: 12px;
+		background: $bg-color;
+		z-index: 1;
+		padding: 5px 2px;
+		border-radius: 5px;
+		color: #FFF;
+	}
+
+	> .tooltip:after {
+		content: '';
+		position: absolute;
+		bottom: 100%;
+		left: 50%;
+		margin-left: -5px;
+		border-width: 5px;
+		border-style: solid;
+		border-color: transparent transparent $bg-color transparent;
+	}
+}
+		
+	
+
+%clearfix {
+	&:after {
+		display: table;
+		clear: both;
+		content: '';
+	}
+}
+
+@mixin tablet {
+	@media screen and (width: #{$tablet-width}) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media screen and (min-width: #{$tablet-width + 1px}) {
+		@content;
+	}
+}
+
+@mixin small-mobile {
+	@media screen and (max-width: 366px) {
+		@content;
+	}
+}
